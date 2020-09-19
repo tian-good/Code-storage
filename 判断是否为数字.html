@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text">
+    <input type="button" value="提交">
+</body>
+<script>
+    var input = document.getElementsByTagName('input');
+    input[0].value = parseInt(input[0].value);
+    input[1].onclick = function() {
+        if (!isNaN(input[0].value)) {
+            alert('正确数字，可以判断')
+        } else {
+            alert('不是数字类型，无法判断');
+        }
+
+    }
+</script>
+
+</html>
